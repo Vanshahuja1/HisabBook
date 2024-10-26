@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -32,7 +33,34 @@ const Home = () => {
       </div>
 
       <footer className="mt-12 text-center text-gray-400 text-sm">
-        Built with ❤️ using React & TailwindCSS
+        <div className="flex items-center justify-center gap-4 mb-4">
+          <a
+            href="https://www.instagram.com/vansh_ahuja1/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-pink-500"
+          >
+            <FaInstagram size={24} />
+          </a>
+          <a
+            href="https://github.com/Vanshahuja1/HisabBook"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-gray-400"
+          >
+            <FaGithub size={24} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/vanshahuja01"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-blue-400"
+          >
+            <FaLinkedin size={24} />
+          </a>
+        </div>
+        <p>Built with ❤️ by <span className="text-blue-400">Vansh Ahuja</span></p>
+        <p>using React & TailwindCSS</p>
       </footer>
     </div>
   );
